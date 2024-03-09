@@ -1,5 +1,5 @@
-/* LoginForm.css */
-.login-form {
+/* SignUpForm.css */
+.sign-up-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -34,7 +34,7 @@
   color: #023e8a;
 }
 
-.submit-btn {
+button {
   background-color: #0077b6;
   color: white;
   padding: 10px 20px;
@@ -44,14 +44,12 @@
   transition: background-color 0.3s;
 }
 
-.submit-btn:hover {
+button:hover {
   background-color: #023e8a;
 }
 
-.submit-btn,
-.google-btn {
-  /* Estilos para tus botones */
-  background-color: #5f99ff;
-  color: white;
-  /* Resto de tus estilos */
+.error {
+  color: #ff4d4f;
+  margin-bottom: 20px;
+  text-align: center;
 }
