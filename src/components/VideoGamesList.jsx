@@ -1,14 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import firebase from 'firebase/app';
-import 'firebase/firestore';
+import { useState, useEffect } from "react";
+import firebase from "firebase/app";
+import "firebase/firestore";
 
 const VideoGamesList = () => {
   const [videoGames, setVideoGames] = useState([]);
 
   useEffect(() => {
     const fetchVideoGames = async () => {
-      const videoGamesCollection = await firebase.firestore().collection('videojuegos').get();
-      const videoGamesData = videoGamesCollection.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+      const videoGamesCollection = await firebase
+        .firestore()
+        .collection("videojuegos")
+        .get();
+      const videoGamesData = videoGamesCollection.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
       setVideoGames(videoGamesData);
     };
 
@@ -19,7 +25,7 @@ const VideoGamesList = () => {
     <div>
       <h1>Videojuegos</h1>
       <ul>
-        {videoGames.map(videoGame => (
+        {videoGames.map((videoGame) => (
           <li key={videoGame.id}>
             <h2>{videoGame.titulo}</h2>
             <p>{videoGame.descripcion}</p>
