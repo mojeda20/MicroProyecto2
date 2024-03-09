@@ -5,7 +5,7 @@
   },
   "hosting": {
     "site": "microproyecto2-moigigi",
-    "public": "public",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
