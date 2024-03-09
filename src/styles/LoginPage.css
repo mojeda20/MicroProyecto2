@@ -1,0 +1,49 @@
+/* LoginForm.css */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f0faff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-title {
+  color: #0077b6;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-group label {
+  color: #023e8a;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #023e8a;
+  border-radius: 5px;
+  color: #023e8a;
+}
+
+.submit-btn {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #023e8a;
+}
