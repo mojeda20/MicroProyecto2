@@ -1,57 +1,76 @@
-/* LoginForm.css */
-.login-form {
+.login-page {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: #f0faff;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5; /* Cambia esto al color de fondo que prefieras */
 }
 
-.form-title {
-  color: #0077b6;
+.login-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin: 1rem;
+}
+
+.login-form h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 24px;
   text-align: center;
 }
 
-.input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.login-form .input-group {
+  margin-bottom: 16px;
+  display: block;
 }
 
-.input-group label {
-  color: #023e8a;
+.login-form .input-group label {
+  display: block;
+  color: #333;
+  margin-bottom: 8px;
 }
 
-.input-group input {
-  padding: 10px;
-  border: 1px solid #023e8a;
-  border-radius: 5px;
-  color: #023e8a;
+.login-form .input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.submit-btn {
-  background-color: #0077b6;
+.login-form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #5e5ebc; /* Usa el color azul de tu imagen */
   color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  border-radius: 4px;
+  margin-bottom: 16px;
 }
 
-.submit-btn:hover {
-  background-color: #023e8a;
-}
-
-.submit-btn,
-.google-btn {
-  /* Estilos para tus botones */
-  background-color: #5f99ff;
+.login-form button[type="button"] {
+  background-color: #ea4335; /* Este es el color para el botón de Google */
   color: white;
-  /* Resto de tus estilos */
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
 }
+
+.login-form .form-footer {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.login-form .form-footer a {
+  color: #5e5ebc;
+  text-decoration: none;
+}
+
+/* Asegúrate de ajustar los estilos de hover y focus como sea necesario. */
+
+/* También necesitarás incluir estilos para las etiquetas de error y cualquier otro estilo que ya esté en tu CSS. */

@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px; /* Ajustar según el diseño */
+  background-color: #fff; /* Ajustar según el diseño */
+}
+.logo {
+  /* Añadir estilos para el logo si es necesario */
+}
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Ajustar el espacio entre los elementos */
+}
+.nav-item {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.nav-item:hover {
+  color: #007bff; /* Ajustar el color de hover según el diseño */
+}
+.login {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff; /* Ajustar según el diseño */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.login:hover {
+  background-color: #0056b3; /* Ajustar según el diseño */
+}
