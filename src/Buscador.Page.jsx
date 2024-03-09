@@ -1,6 +1,6 @@
 
 import Header from './Header'; // Importa tu componente Header
-import Buscador from './Buscador'; // Importa tu componente de búsqueda
+import Buscador from './components/Buscador'; // Importa tu componente de búsqueda
 
 const BuscadorPage = () => {
   return (
