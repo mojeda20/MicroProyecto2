@@ -19,6 +19,7 @@ const Carousel = () => {
 
     fetchData().catch(console.error);
   }, []);
+
   const goToPrev = () => {
     setActiveIndex(
       (prevIndex) => (prevIndex - 1 + clubs.length) % clubs.length
