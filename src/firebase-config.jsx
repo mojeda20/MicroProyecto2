@@ -1,7 +1,6 @@
-// src/firebase-config.js
-
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 // Tus credenciales de configuración de Firebase
 const firebaseConfig = {
@@ -20,4 +19,6 @@ const app = initializeApp(firebaseConfig);
 // Inicializar el servicio de autenticación de Firebase
 const auth = getAuth(app);
 
-export { auth };
+const db = getFirestore(app);
+
+export { auth, db };
