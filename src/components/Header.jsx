@@ -1,5 +1,7 @@
 import "../styles/Header.css";
+
 import logoImage from "../assets/logovideogames.png";
+
 import { Link } from 'react-router-dom';
 
 const Header = () => {
