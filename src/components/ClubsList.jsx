@@ -1,39 +1,31 @@
-import { useState, useEffect } from "react";
-import firebase from "firebase/app";
-import "firebase/firestore";
+import PropTypes from "prop-types";
+import ClubCard from "./ClubCard";
 
-const ClubsList = () => {
-  const [clubs, setClubs] = useState([]);
-
-  useEffect(() => {
-    const fetchClubs = async () => {
-      const clubsCollection = await firebase
-        .firestore()
-        .collection("clubes")
-        .get();
-      const clubsData = clubsCollection.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-      setClubs(clubsData);
-    };
-
-    fetchClubs();
-  }, []);
-
+const ClubList = ({ clubes, userId }) => {
   return (
-    <div>
-      <h1>Clubs</h1>
-      <ul>
-        {clubs.map((club) => (
-          <li key={club.id}>
-            <h2>{club.nombre}</h2>
-            <p>{club.descripcion}</p>
-          </li>
-        ))}
-      </ul>
+    <div className="space-y-4">
+      {clubes.map((club) => (
+        <ClubCard
+          key={club.id}
+          nombre={club.nombre}
+          descripcion={club.descripcion}
+          isMember={club.members.includes(userId)}
+        />
+      ))}
     </div>
   );
 };
 
-export default ClubsList;
+ClubList.propTypes = {
+  clubes: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      nombre: PropTypes.string.isRequired,
+      descripcion: PropTypes.string.isRequired,
+      members: PropTypes.arrayOf(PropTypes.string).isRequired,
+    })
+  ).isRequired,
+  userId: PropTypes.string,
+};
+
+export default ClubList;
