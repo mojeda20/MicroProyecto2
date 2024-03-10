@@ -1,5 +1,6 @@
 import "../styles/Header.css";
 import logoImage from "../assets/logovideogames.png";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -10,7 +11,7 @@ const Header = () => {
       <nav>
         <ul className="nav">
           <li className="nav-item">Buscar Clubes</li>
-          <li className="nav-item">Ver VideoJuegos</li>
+          <Link to="/videojuegos" className="nav-link">Ver VideoJuegos</Link>
         </ul>
       </nav>
       <button className="login">Perfil →</button>
