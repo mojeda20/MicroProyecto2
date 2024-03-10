@@ -1,22 +1,24 @@
-import "../styles/Hero.css";
+
+import '../styles/Hero.css';
+import Slider from './Slider';
+import club1 from "../assets/club1.png";
+import club2 from "../assets/club2.png";
+import club3 from "../assets/club3.png";
+import club4 from "../assets/club4.png";
+import club5 from "../assets/club5.png";
 
 const Hero = () => {
+   // Lista de imágenes
+   const images = [club1, club2, club3, club4, club5];
   return (
     <section className="hero">
       <div className="hero-content">
-        <p className="hero-announcement">
-          Announcing our next round of funding.{" "}
-          <a href="/read-more">Read more →</a>
-        </p>
-        <h1>Data to enrich your online business</h1>
+        <h1>Se parte de los Clubs de Videojuegos</h1>
         <p className="hero-description">
-          Anim aute id magna aliqua ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-          aliqua.
+          En este espacio podrás disfrutar de los mejores videojuegos y ser parte de un club, donde podrás compartir con tus amigos y ganar premios
         </p>
-        <div className="hero-buttons">
-          <button className="btn btn-primary">Get started</button>
-          <button className="btn btn-secondary">Learn more →</button>
+        <div className="hero-slider">
+          <Slider images={images} /> {/* Utiliza el componente Slider aquí */}
         </div>
       </div>
     </section>
