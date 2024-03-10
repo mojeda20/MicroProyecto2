@@ -24,7 +24,10 @@ const SearchPage = () => {
 
   return (
     <div className="p-4">
-      <SearchBar onSearch={setSearchTerm} />
+      <SearchBar
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
       <ClubList clubes={filteredClubes} />
     </div>
   );
