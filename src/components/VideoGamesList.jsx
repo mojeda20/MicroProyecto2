@@ -1,24 +1,21 @@
 import { useState, useEffect } from "react";
-import firebase from "firebase/app";
-import "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase-config";
 
 const VideoGamesList = () => {
   const [videoGames, setVideoGames] = useState([]);
 
   useEffect(() => {
-    const fetchVideoGames = async () => {
-      const videoGamesCollection = await firebase
-        .firestore()
-        .collection("videojuegos")
-        .get();
-      const videoGamesData = videoGamesCollection.docs.map((doc) => ({
-        id: doc.id,
+    const fetchData = async () => {
+      const querySnapshot = await getDocs(collection(db, "videojuegos"));
+      const clubsArray = querySnapshot.docs.map((doc) => ({
         ...doc.data(),
+        id: doc.id,
       }));
-      setVideoGames(videoGamesData);
+      setVideoGames(clubsArray);
     };
 
-    fetchVideoGames();
+    fetchData().catch(console.error);
   }, []);
 
   return (
