@@ -1,14 +1,21 @@
 import "../styles/Header.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import logoImage from "../assets/logovideogames.png";
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo">LOGO</div>
+      <div className="logo">
+        <img src={logoImage} alt="Logo" />
+      </div>
       <nav>
         <ul className="nav">
-          <li className="nav-item">Buscar Clubes</li>
-          <Link to="/videojuegos" className="nav-link">Ver VideoJuegos</Link>
+          <Link to="/searchPage" className="nav-link">
+            Buscar Clubes
+          </Link>
+          <Link to="/videojuegos" className="nav-link">
+            Ver VideoJuegos
+          </Link>
         </ul>
       </nav>
       <button className="login">Perfil →</button>
