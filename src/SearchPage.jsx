@@ -3,7 +3,7 @@ import useClubes from "../src/Hooks/useClubes";
 import useDebounce from "../src/Hooks/useDebonce";
 import ClubList from "../src/components/ClubsList";
 import SearchBar from "../src/components/SearchBar";
-//import useAuth from "../src/Hooks/useAuth";
+import useAuth from "../src/Hooks/useAuth";
 import "../src/styles/SearchPage.css";
 
 const SearchPage = () => {
