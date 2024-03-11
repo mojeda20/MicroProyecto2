@@ -4,7 +4,7 @@ import useDebounce from "../src/Hooks/useDebonce";
 import ClubList from "../src/components/ClubsList";
 import SearchBar from "../src/components/SearchBar";
 //import useAuth from "../src/Hooks/useAuth";
-import "../styles/SearchPage.css";
+import "../src/styles/SearchPage.css";
 
 const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
