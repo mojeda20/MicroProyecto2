@@ -3,8 +3,8 @@ import useClubes from "../src/Hooks/useClubes";
 import useDebounce from "../src/Hooks/useDebonce";
 import ClubList from "../src/components/ClubsList";
 import SearchBar from "../src/components/SearchBar";
-import useAuth from "../src/Hooks/useAuth";
-import '../styles/SearchPage.css';
+//import useAuth from "../src/Hooks/useAuth";
+import "../styles/SearchPage.css";
 
 const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -27,13 +27,13 @@ const SearchPage = () => {
   return (
     <div className="p-4">
       <div className="search-bar">
-      <SearchBar
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
+        <SearchBar
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
       </div>
       <div className="club-list">
-      <ClubList clubes={filteredClubes} />
+        <ClubList clubes={filteredClubes} />
       </div>
     </div>
   );
