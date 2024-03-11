@@ -13,7 +13,12 @@
 .nav {
   list-style: none;
   display: flex;
-  gap: 20px; /* Ajustar el espacio entre los elementos */
+  gap: 30px; /* Ajustar el espacio entre los elementos */
+}
+.nav-link{
+  color: #1a64ae; /* Ajustar el color del texto según el diseño */
+  font-weight: bold;
+  font-size: 20px; 
 }
 .nav-item {
   cursor: pointer;
@@ -31,10 +36,10 @@
   cursor: pointer;
   border: none;
   font-weight: bold;
-  background-color: #b921e8; /* Ajustar según el diseño */
+  background-color: #1a64ae; /* Ajustar según el diseño */
   color: white;
   transition: background-color 0.3s ease;
 }
 .login:hover {
-  background-color: #1a64ae; /* Ajustar según el diseño */
+  background-color: #b921e8 ; /* Ajustar según el diseño */
 }
