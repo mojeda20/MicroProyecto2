@@ -98,20 +98,3 @@
   text-decoration: none;
 }
 
-.login-form .submit-btn,
-.login-form button[type="button"] {
-  width: 100%;
-  padding: 12px;
-  background-color: #1a64ae; /* Usa el color azul de tu imagen */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 16px;
-  transition: background-color 0.3s ease; /* Agrega una transición suave de 0.3 segundos para el cambio de color de fondo */
-}
-
-.login-form .submit-btn:hover,
-.login-form button[type="button"]:hover {
-  background-color: #8c18a0; /* Cambia el color de fondo cuando el cursor está sobre el botón */
-}
-
