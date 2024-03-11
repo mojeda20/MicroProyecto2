@@ -6,6 +6,7 @@ import SearchBar from "../src/components/SearchBar";
 //import useAuth from "../src/Hooks/useAuth";
 import "../src/styles/SearchPage.css";
 
+
 const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredClubes, setFilteredClubes] = useState([]);

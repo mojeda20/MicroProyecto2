@@ -7,6 +7,7 @@ import { db } from "../firebase-config";
 import { collection, addDoc } from "firebase/firestore";
 import { useEffect } from "react";
 import { getDocs } from "firebase/firestore";
+import '../styles/SignUpForm.css';
 
 function SignUpForm() {
   const [firstName, setFirstName] = useState("");
@@ -57,6 +58,7 @@ function SignUpForm() {
   };
 
   return (
+    <div className="fondo-singup-form">
     <form className="sign-up-form" onSubmit={handleSubmit}>
       <h2 className="form-title">Registrarse</h2>
       {error && <p className="error">{error}</p>}
@@ -110,6 +112,7 @@ function SignUpForm() {
 
       <button type="submit">Registrarse</button>
     </form>
+    </div>
   );
 }
 

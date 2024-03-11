@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import '../styles/SearchPage.css';
 
 const SearchBar = ({ value, onChange }) => {
   return (

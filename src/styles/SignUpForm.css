@@ -1,43 +1,63 @@
-/* SignUpForm.css */
 .sign-up-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  background-color: #f0faff;
+  justify-content: center;
+  gap: 10px;
+  background-color: #c463e2;
   padding: 40px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
   margin: auto;
 }
+.fondo-singup-form {
+  background-image: url('../assets/fondologin.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #1a64ae; /* Color del texto */
+  /* Otros estilos que desees aplicar a todos los inputs */
+}
 
 .form-title {
-  color: #0077b6;
+  color: #ffffff;
   text-align: center;
 }
 
-.input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.error {
+  color: #ff4d4f;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.input-group label {
-  color: #023e8a;
-}
-
-.input-group input {
+.sign-up-form select {
+  width: 100%;
   padding: 10px;
-  border: 1px solid #023e8a;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  color: #023e8a;
+  font-size: 16px;
+  color: #1a64ae; 
 }
+
 
 button {
   background-color: #0077b6;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -45,11 +65,5 @@ button {
 }
 
 button:hover {
-  background-color: #023e8a;
-}
-
-.error {
-  color: #ff4d4f;
-  margin-bottom: 20px;
-  text-align: center;
+  background-color: #6b1a88;
 }
