@@ -8,6 +8,7 @@ import {
 import "../styles/LoginPage.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import '../styles/LoginPage.css';
 
 function LoginForm() {
   const [email, setEmail] = useState("");

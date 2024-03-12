@@ -1,0 +1,25 @@
+.p-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    font-size: large;
+    color:#973db2; /* Cambia el color del texto */
+    background: linear-gradient(180deg, #a5d1ee 0%, rgba(255, 255, 255, 0) 100%);
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  .p-4 input {
+    width: calc(100% - 30px); /* Ancho del input ajustado para acomodar la imagen */
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    box-sizing: border-box; 
+    color: #1a64ae; 
+    font-weight: bold; 
+    font-size: medium;
+    background-image: url('../assets/lupa.png'); 
+    background-position: right center ; 
+    background-repeat: no-repeat; 
+    background-size: 50px 50px; 
+}

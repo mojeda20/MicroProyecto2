@@ -3,35 +3,54 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f2f5; /* Cambia esto al color de fondo que prefieras */
+  background-image: url('../assets/fondologin.png');
+  background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+  background-position: center; /* Centra la imagen */
 }
 
 .login-form {
-  background: #ffffff;
-  padding: 40px;
+  background: #c463e2;
+  padding: 10px 40px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px #1a64ae(254, 251, 251, 0.1);
   width: 100%;
   max-width: 400px;
   box-sizing: border-box;
   margin: 1rem;
+  
 }
 
 .login-form h2 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 24px;
+  color:  #ffffff;
+  font-size: 30px;
+  margin-bottom: 4px;
+  text-align: center;
+  background-image: url('../assets/logovideogames.png'); /* Ruta de tu logo */
+  background-repeat: no-repeat;
+  background-position: center top; /* Coloca el logo en el centro arriba del texto */
+  background-size: 70px; /* Ajusta el tamaño del logo */
+  padding-top: 70px; /* Ajusta el espacio para el logo */
+}
+
+.login-form p {
+  color:  #ffffff;
+  font-size: 15px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
+
 .login-form .input-group {
   margin-bottom: 16px;
-  display: block;
+  display: flex;
+  flex-direction: column; /* Establece la dirección de los elementos como columna */
+  
 }
 
 .login-form .input-group label {
   display: block;
-  color: #333;
+  color: #ffffff;
+  font-weight: bold;
   margin-bottom: 8px;
 }
 
@@ -39,26 +58,34 @@
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #1a64ae;
 }
 
 .login-form .submit-btn {
   width: 100%;
   padding: 12px;
-  background-color: #5e5ebc; /* Usa el color azul de tu imagen */
+  background-color: #1a64ae; /* Usa el color azul de tu imagen */
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   margin-bottom: 16px;
 }
 
 .login-form button[type="button"] {
-  background-color: #ea4335; /* Este es el color para el botón de Google */
+  background-color: #1a64ae; /* Este es el color para el botón de Google */
   color: white;
   width: 100%;
-  padding: 12px;
+  padding: 15px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  background-image: url('../assets/logogoogle.png'); /* Reemplaza 'ruta/al/logo.png' con la ruta correcta de tu imagen */
+  background-repeat: no-repeat;
+  background-position: 50px center;;
+  background-size: 25px; /* Ajusta el tamaño del logo */
+  padding-left: 0px; /* Ajusta el espacio para el logo */
+  
 }
 
 .login-form .form-footer {
@@ -70,7 +97,3 @@
   color: #5e5ebc;
   text-decoration: none;
 }
-
-/* Asegúrate de ajustar los estilos de hover y focus como sea necesario. */
-
-/* También necesitarás incluir estilos para las etiquetas de error y cualquier otro estilo que ya esté en tu CSS. */
