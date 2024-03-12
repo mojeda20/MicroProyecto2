@@ -3,7 +3,7 @@ import '../styles/SearchPage.css';
 
 const ClubCard = ({ nombre, descripcion, isMember }) => {
   return (
-    <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 pl-8 pr-8">
       <h3 className="font-bold text-xl mb-2">{nombre}</h3>
       <p className="text-gray-700 text-base">{descripcion}</p>
       {isMember && (
@@ -22,3 +22,4 @@ ClubCard.propTypes = {
 };
 
 export default ClubCard;
+

@@ -1,0 +1,23 @@
+/* Estilos para VideoGamesList.css */
+
+/* Estilos para el título */
+h1 {
+    color: #1a64ae;; /* Azul */
+  }
+  
+  /* Estilos para los títulos de los videojuegos */
+  h2 {
+    color: #973db2; /* Morado */
+  }
+  
+  /* Estilos para la descripción de los videojuegos */
+  p {
+    color: #973db2; /* Morado */
+  }
+/* Estilos para VideoGamesList.css */
+
+/* Estilos para el fondo del componente */
+.container {
+    background: linear-gradient(180deg, #a5d1ee 0%, rgba(255, 255, 255, 0) 100%); 
+  }
+  

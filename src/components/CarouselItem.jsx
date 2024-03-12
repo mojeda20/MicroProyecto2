@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import ClubCard from "./ClubCard";
+import "../styles/Carousel.css";
 
 const CarouselItem = ({ club, isMember }) => {
   return (
