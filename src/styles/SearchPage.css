@@ -23,3 +23,104 @@
     background-repeat: no-repeat; 
     background-size: 50px 50px; 
 }
+
+/* Estilos para ClubCard */
+.bg-white {
+    background-color: #efe1ef; /* Fondo blanco */
+  }
+  
+  .shadow-md {
+    box-shadow: 0px 2px 4px rgba(166, 24, 24, 0.1); /* Sombra */
+  }
+  
+  .rounded {
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  .px-8 {
+    padding-left: 2rem; /* 8px */
+    padding-right: 2rem; /* 8px */
+  }
+  
+  .pt-6 {
+    padding-top: 1.5rem; /* 6px */
+  }
+  
+  .pb-8 {
+    padding-bottom: 2rem; /* 8px */
+  }
+  /* Añadiendo padding a la izquierda y a la derecha */
+.pl-8 {
+    padding-left: 2rem; /* Ajusta el padding izquierdo según tus necesidades */
+  }
+  
+  .pr-8 {
+    padding-right: 2rem; /* Ajusta el padding derecho según tus necesidades */
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem; /* 4px */
+  }
+  
+  .font-bold {
+    font-weight: bold; /* Fuente en negrita */
+  }
+  
+  .text-xl {
+    color: #973db2;
+    font-size: 1.25rem; /* Tamaño de fuente 20px */
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem; /* 2px */
+  }
+  
+  .text-gray-700 {
+    color: #20478b; /* Color de texto gris */
+  }
+  
+  .text-base {
+    font-size: 1rem; /* Tamaño de fuente base */
+  }
+  
+  .inline-block {
+    display: inline-block; /* Mostrar en línea */
+  }
+  
+  .bg-blue-200 {
+    background-color: #bee3f8; /* Fondo azul claro */
+  }
+  
+  .rounded-full {
+    border-radius: 9999px; /* Bordes redondeados completos */
+  }
+  
+  .px-3 {
+    padding-left: 0.75rem; /* 3px */
+    padding-right: 0.75rem; /* 3px */
+  }
+  
+  .py-1 {
+    padding-top: 0.25rem; /* 1px */
+    padding-bottom: 0.25rem; /* 1px */
+  }
+  
+  .text-sm {
+    color: #973db2;
+    font-size: 0.875rem; /* Tamaño de fuente pequeño */
+  }
+  
+  .font-semibold {
+    color: #973db2;
+    font-weight: 600; /* Fuente semi-negrita */
+  }
+  
+  .text-blue-700 {
+    color: #4c51bf; /* Color de texto azul */
+  }
+  
+  .mr-2 {
+    margin-right: 0.5rem; /* 2px */
+  }
+  
+  

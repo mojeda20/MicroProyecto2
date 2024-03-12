@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "../styles/UserDetail.css";
 
 const UserDetail = ({ user }) => {
   return (

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase-config";
+import "../styles/VideoGamesList.css"; // Importa el archivo de estilos CSS
 
 const VideoGamesList = () => {
   const [videoGames, setVideoGames] = useState([]);
@@ -19,7 +20,7 @@ const VideoGamesList = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container"> {/* Aplica la clase .container al contenedor principal */}
       <h1>Videojuegos</h1>
       <ul>
         {videoGames.map((videoGame) => (
