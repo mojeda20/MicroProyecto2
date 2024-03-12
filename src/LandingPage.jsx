@@ -1,13 +1,16 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Carousel from "./components/Carousel";
+import Carousel from "./Carousel";
+import useClubes from "../src/Hooks/useClubes";
 
 function LoginPage() {
+  const clubes = useClubes();
+
   return (
     <div className="landing-page">
       <Header />
       <Hero />
-      <Carousel />
+      <Carousel clubes={clubes} />
     </div>
   );
 }

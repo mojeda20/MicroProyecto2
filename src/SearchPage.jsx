@@ -5,7 +5,7 @@ import ClubList from "../src/components/ClubsList";
 import SearchBar from "../src/components/SearchBar";
 //import useAuth from "../src/Hooks/useAuth";
 import "../src/styles/SearchPage.css";
-
+import Header from "./components/Header";
 
 const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -27,6 +27,7 @@ const SearchPage = () => {
 
   return (
     <div className="p-4">
+      <Header />
       <div className="search-bar">
         <SearchBar
           value={searchTerm}
